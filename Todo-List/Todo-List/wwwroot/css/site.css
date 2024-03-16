@@ -1,15 +1,15 @@
 html {
-    font-size: 14px;
+    font-size: 1px;
   }
   
   @media (min-width: 768px) {
     html {
-      font-size: 16px;
+      font-size: 22px;
     }
   }
   
   .btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
-    box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+      box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #47264;
   }
   
   html {
@@ -18,12 +18,14 @@ html {
   }
   
   body {
-      margin-bottom: 60px;
-      font-family: "Didact Gothic", sans-serif;
+      background-color: #92C7CF;
+      color: white;
+      font-family: "Dangrek", sans-serif;
       font-weight: 400;
       font-style: normal;
-  
   }
+  
+  
   
   * {
       margin: 0;
@@ -32,19 +34,20 @@ html {
   }
   
   body {
-      background-color: #E1AFD1;
-      color: white;
-      font-family: "Poppins", sans-serif;
-      min-height: 100vh;
+      .dangrek-regular
+      font-family: "Dangrek", sans-serif;
+      font-weight: 400;
+      font-style: normal;
   }
+   
   
   header {
-      font-size: 4rem;
+      font-size: 1.5rem;
   }
   
   header,
   form {
-      min-height: 20vh;
+      min-height: 15vh;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -61,7 +64,7 @@ html {
       }
   
       form button {
-          color: rgb(255, 200, 0);
+          color: rgb(254, 199, 180);
           background: white;
           cursor: pointer;
           transition: all 0.3 ease;
@@ -70,12 +73,12 @@ html {
   
           form button:hover {
               color: white;
-              background: rgb(255, 200, 0);
+              background: rgb(252, 129, 158);
           }
   
   .fa-plus-circle {
       margin-top: 0.3rem;
-      margin-left: -8px;
+      margin-left: -12px;
   }
   
   .todo-container {
@@ -85,15 +88,15 @@ html {
   }
   
   .todo-list {
-      min-width: 95%;
+      min-width: 90%;
       list-style: none;
   }
   
   .todo {
       margin: 0.5rem;
       padding-left: 0.5rem;
-      background: #F5EEE6;
-      color: black;
+      background: white;
+      color: midnightblue;
       font-size: 1.5rem;
       display: flex;
       justify-content: space-between;
@@ -103,7 +106,7 @@ html {
   }
   
       .todo li {
-          flex: 1;
+          flex: 3;
       }
   
   .trash-btn,
@@ -116,17 +119,17 @@ html {
   }
   
   .complete-btn {
-      background: rgb(255, 200, 0);
+      background: rgb(191, 216, 175);
   }
   
   .trash-btn {
       border-top-right-radius: 1.75rem;
       border-bottom-right-radius: 1.75rem;
-      background: rgb(171, 171, 171);
+      background: rgb(208, 72, 72)
   }
   
   .todo-item {
-      padding: 0rem 0.5rem;
+      padding: 0rem 0.9rem;
   }
   
   .fa-trash,
@@ -156,11 +159,11 @@ html {
       margin: 1rem;
       position: relative;
       overflow: hidden;
-      border-radius: 30px;
+      border-radius: 50px;
   }
   
   select {
-      color: rgb(255, 200, 0);
+      color: rgb(146, 199, 207);
       width: 10rem;
       height: 3.2rem;
       cursor: pointer;
@@ -170,7 +173,7 @@ html {
   .select::after {
       content: "\25BC";
       position: absolute;
-      background: rgb(255, 200, 0);
+      background:rgb(199, 200, 204);
       top: 0;
       right: 0;
       padding: 1rem;
@@ -178,7 +181,7 @@ html {
       transition: all 0.3s ease;
   }
   
-  .select::hover::after {
-      background: white;
-      color: rgb(255, 200, 0);
+  .select:hover::after {
+      background:rgb(146, 199, 207);
+      color: rgb(146, 199, 207);
   }
